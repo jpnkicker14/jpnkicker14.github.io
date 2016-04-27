@@ -1,0 +1,87 @@
+#contact {
+  margin-top: 85px; }
+  #contact .contact {
+    margin: 40px 0 100px 0; }
+    #contact .contact p {
+      color: #939394;
+      font-size: 19px;
+      margin-bottom: 47px;
+      font-style: italic;
+      line-height: 24px; }
+    #contact .contact form {
+      margin: 0; }
+    #contact .contact .submit {
+      margin: 0; }
+      #contact .contact .submit .box {
+        margin: 0; }
+      #contact .contact .submit label.checkbox {
+        color: #394350;
+        font-style: 14px; }
+      #contact .contact .submit .right {
+        float: right; }
+        #contact .contact .submit .right button {
+          float: right;
+          text-transform: uppercase;
+          color: #fff;
+          background: #187CCC;
+          font-size: 15px;
+          padding: 4px 12px;
+          border: 0 none;
+          border-radius: 3px;
+          -webkit-transition: background linear .2s, box-shadow linear .2s;
+          -moz-transition: background linear .2s, box-shadow linear .2s;
+          -o-transition: background linear .2s, box-shadow linear .2s;
+          transition: background linear .2s, box-shadow linear .2s; }
+          #contact .contact .submit .right button:hover {
+            background: #252528; }
+  #contact div .loading-img{margin: 0 auto;}
+  #contact .form {
+    margin: 0; }
+    #contact .form .row-col {
+      padding-left: 0; }
+    #contact .form .box {
+      margin: 0; }
+      #contact .form .box input[type="text"] {
+        padding-left: 39px;
+        margin-bottom: 10px;
+        color: black;
+        height: 39px;
+        border-radius: 3px; }
+    #contact .form .box input[type="email"] {
+        padding-left: 39px;
+        margin-bottom: 10px;
+        color: black;
+        height: 39px;
+        border-radius: 3px; }
+      #contact .form .box input.name {
+        background: url("/resources/images/icons/formname.png") white no-repeat 5px; }
+      #contact .form .box input.mail {
+        background: url("/resources/images/icons/formmail.png") white no-repeat 5px; }
+      #contact .form .box input.phone {
+        background: url("/resources/images/icons/formphone.png") white no-repeat 5px; }
+      #contact .form .box textarea {
+        padding: 11px;
+        margin: 0;
+        border-radius: 3px;
+        height: 139px; }
+
+
+
+/* Responsive
+-------------------------------------------------- */
+@media (max-width: 767px) {
+  #contact .contact .submit .box {
+    margin: 10px 0 24px; }
+  #contact .contact .submit .right {
+    float: none; }
+    #contact .contact .submit .right input[type="submit"] {
+      margin: 0 auto;
+      float: none;
+      width: 53%;
+      display: block;
+      padding: 7px; }
+}
+@media (max-width: 480px) {
+  #contact .contact .submit .right input[type="submit"] {
+    width: 60%; }
+}

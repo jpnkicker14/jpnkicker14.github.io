@@ -1,0 +1,152 @@
+[
+	{
+        "createdAt": "2015-08-13T09:17:56.409Z",
+        "description": [
+            "Worked with student athletes in developing time management, note taking, and test taking skills",
+            "Set up meetings for keeping the student on track and knowledge about various course material"
+        ],
+        "endDate": "2012-12-20",
+        "image": "/resources/images/logos/UHM-athletics-logo.jpg",
+        "link": "http://hawaiiathletics.com/",
+        "location": {
+            "city": "Honolulu",
+            "state": "Hawaii"
+        },
+        "name": "Athletic Department, University of Hawaii at Manoa",
+        "objectId": "75YnpPYADn",
+        "order": 4,
+        "position": "Tutor/Mentor",
+        "startDate": "2012-01-01",
+        "updatedAt": "2015-08-13T21:00:02.956Z"
+    },
+	{
+
+        "createdAt": "2015-08-13T09:17:56.417Z",
+        "description": [
+            "Install, upgrade, and trouble shoot in-house health care software, through Remote Desktop Protocol.",
+            "Experience with Office 365, SharePoint, GoToMeeting, TeamBox, Git (versioning control program), and BugZilla",
+            "Communicated with project mangers, clients and other techs. ",
+            "Assisted in further develop an internal logging website for clients. This included \u2028development meetings for features and scope. The site wes developed using Ruby on Rails. "
+        ],
+        "endDate": "2012-12-20",
+        "image": "/resources/images/logos/datahouse-logo.jpg",
+        "link": "http://www.datahouse.com/",
+        "location": {
+            "city": "Honolulu",
+            "state": "Hawaii"
+        },
+        "name": "DataHouse Holdings Corp.",
+        "objectId": "C9gBSLtcBx",
+        "order": 6,
+        "position": "Intern",
+        "startDate": "2012-05-01",
+        "updatedAt": "2015-08-13T20:59:53.947Z"
+    },
+	{
+
+        "createdAt": "2015-08-13T09:17:56.404Z",
+        "description": [
+            "Learned team working and problem solving skills while maintaining the grounds at Les Murakami Stadium",
+            "Supervised a six man crew during baseball games"
+        ],
+        "endDate": "2011-05-20",
+        "image": "/resources/images/logos/UHM-athletics-logo.jpg",
+        "link": "http://hawaiiathletics.com/",
+        "location": {
+            "city": "Honolulu",
+            "state": "Hawaii"
+        },
+        "name": "Athletic Department, University of Hawaii at Manoa",
+        "objectId": "KiqxN4RCyJ",
+        "order": 2,
+        "position": "Grounds Crew Chief",
+        "startDate": "2009-02-01",
+        "updatedAt": "2015-08-13T21:00:11.253Z"
+    },
+	{
+
+        "createdAt": "2015-08-13T09:17:56.406Z",
+        "description": [
+            "Learned problem solving skills while up keeping the functionality of the building ",
+            "Learned and implemented organization skills"
+        ],
+        "endDate": "2010-06-20",
+        "image": "/resources/images/logos/UHM-logo.jpg",
+        "link": "http://www.hawaii.edu/campuscenter/",
+        "location": {
+            "city": "Honolulu",
+            "state": "Hawaii"
+        },
+        "name": "University of Hawaii at Manoa",
+        "objectId": "euEYSZSmoB",
+        "order": 1,
+        "position": "Campus Center Faculties Associate",
+        "startDate": "2009-06-01",
+        "updatedAt": "2015-08-13T21:00:05.710Z"
+    },
+	{
+
+        "createdAt": "2015-08-13T09:17:56.410Z",
+        "description": [
+            "Worked with implementing/troubleshooting proprietary health application",
+            "Developed sites for various clients in different languages including Ruby on Rails, MEAN Stack (MongoDB, Express.js, Angular.js, Node.js), and .Net",
+            "Worked and lead teams of various sizes both locally and remotely"
+        ],
+        "endDate": "",
+        "image": "/resources/images/logos/datahouse-logo.jpg",
+        "link": "http://www.datahouse.com/",
+        "location": {
+            "city": "Honolulu",
+            "state": "Hawaii"
+        },
+        "name": "DataHouse Holdings Corp.",
+        "objectId": "jNgZ72zH9D",
+        "order": 7,
+        "position": "Web Developer",
+        "startDate": "2012-05-01",
+        "updatedAt": "2015-08-16T07:42:53.035Z"
+    },
+	{
+
+        "createdAt": "2015-08-13T09:17:56.404Z",
+        "description": [
+            "Utilized Final Cut Pro and video editing techniques for to create videos shown on OC Sports Enchanted",
+            "Worked with Final Cut Pro, Compression, and Transmit.",
+            "Participated in marketing meetings"
+        ],
+        "endDate": "2012-05-01",
+        "image": "/resources/images/logos/twc-logo.jpg",
+        "link": "http://www.oceanic.com/",
+        "location": {
+            "city": "Honolulu",
+            "state": "Hawaii"
+        },
+        "name": "Oceanic Time Warner Cable",
+        "objectId": "lEvgX2DBIi",
+        "order": 5,
+        "position": "Intern",
+        "startDate": "2012-02-01",
+        "updatedAt": "2015-08-13T21:00:08.567Z"
+    },
+	{
+
+        "createdAt": "2015-08-13T09:17:56.404Z",
+        "description": [
+            "Maintain and troubleshooted over two dozen desktop and laptop and several network printers",
+            "Input study hall data into Microsoft Access database"
+        ],
+        "endDate": "2012-09-20",
+        "image": "/resources/images/logos/UHM-athletics-logo.jpg",
+        "link": "http://hawaiiathletics.com/",
+        "location": {
+            "city": "Honolulu",
+            "state": "Hawaii"
+        },
+        "name": "Athletic Department, University of Hawaii at Manoa",
+        "objectId": "t4F0xr17eP",
+        "order": 3,
+        "position": "Computer Support Specialist",
+        "startDate": "2011-08-01",
+        "updatedAt": "2015-08-13T21:00:14.415Z"
+    }
+]

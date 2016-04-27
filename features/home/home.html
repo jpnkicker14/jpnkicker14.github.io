@@ -1,0 +1,110 @@
+<div>
+    <section id='feature_slider' class='lol' ng-init='indexSlider()'>
+        <!--
+            Each slide is composed by <img> and .info
+            - .info's position is customized with css in home.css
+            - each <img> parallax effect is declared by the following params inside its class:
+
+            example: class='asset left-472 sp600 t120 z3'
+            left-472 means left: -472px from the center
+            sp600 is speed transition
+            t120 is top to 120px
+            z3 is z-index to 3
+            Note: Maintain this order of params
+
+            For the backgrounds, you can combine from the bgs folder :D
+        -->
+        <article class='slide' id='showcasing'
+                 style='background: url("/resources/images/home/backgrounds/background1.jpg") repeat-x top center;'>
+            <img class='asset left-30 sp600 t85 z1' src='/resources/images/home/image1.png'/>
+
+            <div class='info'>
+                <h2>Warriors 2011 - Place Kicker</h2>
+            </div>
+        </article>
+        <article class='slide' id='ideas' style='background: url("/resources/images/backgrounds/aqua.jpg") repeat-x top center;'>
+            <div class='info'>
+                <h2>Magician</h2>
+            </div>
+            <img class='asset left-480 sp600 t260 z1' src='/resources/images/home/left.jpg'/>
+            <img class='asset left-210 sp600 t213 z2' src='/resources/images/home/center.jpg'/>
+            <img class='asset left60 sp600 t260 z1' src='/resources/images/home/right.jpg'/>
+        </article>
+        <article class='slide' id='tour' style='background: url("/resources/images/backgrounds/color-splash.jpg") repeat-x top center;'>
+            <img class='asset left-472 sp650 t210 z3' src='/resources/images/slides/scene3/ipad.png'/>
+            <img class='asset left-365 sp600 t270 z4' src='/resources/images/slides/scene3/iphone.png'/>
+            <img class='asset left-350 sp450 t135 z2' src='/resources/images/slides/scene3/desktop.png'/>
+            <img class='asset left-185 sp550 t220 z1' src='/resources/images/slides/scene3/macbook.png'/>
+            <div class='info'>
+                <h2>Web Developer</h2>
+            </div>
+        </article>
+        <!--<article class='slide' id='responsive' style='background: url("/vendor/clean_canvas/2.0.0/img/backgrounds/indigo.jpg") repeat-x top center;'>-->
+            <!--<img class='asset left-472 sp600 t120 z3' src='/vendor/clean_canvas/2.0.0/img/slides/scene4/html5.png'/>-->
+            <!--<img class='asset left-190 sp500 t120 z2' src='/vendor/clean_canvas/2.0.0/img/slides/scene4/css3.png'/>-->
+
+            <!--<div class='info'>-->
+                <!--<h2>-->
+                    <!--Responsive <strong>HTML5 & CSS3</strong>-->
+                    <!--Theme-->
+                <!--</h2>-->
+            <!--</div>-->
+        <!--</article>-->
+    </section>
+
+    <div id='features'>
+        <div class='container'>
+            <!--<div class='section_header'>-->
+                <!--<h3>Features</h3>-->
+            <!--</div>-->
+            <div class='row feature'>
+                <div class='col-sm-6'>
+                    <a href='#'><img src='/resources/images/ColorodoKick.png' class='img-responsive img-rounded'/></a>
+                </div>
+                <div class='col-sm-6 info'>
+                    <h3>
+                        <img src='/resources/images/icons/glyphicons_312_rugby.png'/>
+                        <a href='#/football'>Football</a>
+                    </h3>
+
+                    <p>
+                        Relive my dream come true season for the University of Hawaii Warriors (2011).
+                        And maybe see some new articles on other opportunities that are arising.
+                    </p>
+                </div>
+            </div>
+            <div class='row feature'>
+                <div class='col-sm-6 pic-right'>
+                    <img src='/resources/images/magic_home.jpg' class='pull-right img-responsive img-rounded'/>
+                </div>
+                <div class='col-sm-6 info info-left'>
+                    <h3>
+                        <img src='/resources/images/icons/glyphicons_009_magic.png'/>
+                        <a href='#/magic'>Magic</a>
+                    </h3>
+
+                    <p>
+                        Do you believe in magic? Seeing magic can take you back and show you that anything is possible.
+                        Take a look and be apart of my magical career.  Where we can have fun, laugh, and mystify.
+                    </p>
+                </div>
+            </div>
+            <div class='row feature'>
+                <div class='col-sm-6'>
+                    <img src='/resources/images/home/showcase3.png' class='img-responsive'/>
+                </div>
+                <div class='col-sm-6 info'>
+                    <h3>
+                        <img src='/resources/images/icons/glyphicons_086_display.png'/>
+                        <a href='#/resume'>Web Developer</a>
+                    </h3>
+
+                    <p>
+                        Looking for a web developer or technical person.  Checkout my resume.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

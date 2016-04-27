@@ -1,0 +1,47 @@
+#resume {
+  margin-bottom: 90px;
+  margin-top: 85px; }
+  #resume .intro h6 {
+    font-size: 21px;
+    font-style: italic;
+    color: #252526;
+    line-height: 29px;
+    font-weight: normal;
+    margin: 0 0 16px 0; }
+  #resume .intro p {
+    color: #3F3F3F;
+    line-height: 24px; }
+
+#tab {
+  padding: 35px 0 25px;
+  margin: 0;
+  background: #f7f7f7;
+  margin-bottom: 90px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  #tab .section_header {
+    margin-bottom: 60px; }
+    #tab .section_header h3 {
+      color: #9D9D9E;
+      border-color: #9D9D9E;
+      margin: 0; }
+
+
+
+/* Responsive
+-------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+  #tab .container {
+    padding: 0px 20px; }
+
+  #resume {
+    margin-bottom: 75px; }
+    #resume .intro {
+      margin-bottom: 45px; }
+}
+@media (max-width: 480px) {
+
+}

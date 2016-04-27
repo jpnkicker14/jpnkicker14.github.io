@@ -1,0 +1,25 @@
+ [
+    {
+      "Year": 2013,
+      "Team": "AFL WEST",
+      "FGM": 0,
+      "FGA": 0,
+      "PCT": "NA",
+      "LNG": "NA",
+      "XPM": 11,
+      "XPA": 14,
+      "PTS": 11
+    },
+
+    {
+      "Year": 2011,
+      "Team": "HAW",
+      "FGM": 4,
+      "FGA": 4,
+      "PCT": 100.0,
+      "LNG": 38,
+      "XPM": 26,
+      "XPA": 29,
+      "PTS": 38
+    }
+  ]

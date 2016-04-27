@@ -1,0 +1,57 @@
+<div id="portfolio_item">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section_header">
+        <h3>Magic</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class='col-sm-7 left_box'>
+        <!--<img src='/resources/images/magic_home.jpg' class='img-responsive img-rounded'/>-->
+        <div class="big">
+          <img ng-show="mainMeida.type === 'image'" ng-src="{{mainMeida.image}}" class="img-responsive" >
+          <div class="embed-container" ng-show="mainMeida.type === 'video'">
+            <iframe ng-src="{{videoLink}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="thumbs">
+          <div class="thumb" ng-repeat="media in magicMedia">
+            <img ng-src="{{media.image}}" class="img-responsive img-rounded">
+            <a class="mask" ng-click="setMedia(media)">
+              <div class="more">+</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-5 right_box">
+        <h2>Kenton "The Magic Man" Chun</h2>
+        <p>
+          Welcome to the magical section of KentonChun.com. Here you can see an overview of my magic career and any new updates.
+        </p>
+        <p>
+          I started practicing magic at a young age, and have continue to further my knowledge and techniques by performing for
+          family, friends, and teammates around the world (see videos on below).
+        </p>
+        <p>
+          I currently am available to do magic shows for almost any event you may have.
+          Adding a magician to a party is a great way to provide a unique form of entertainment for your guests, and to be amazed in the process.
+          If you have any questions please feel free to email me through the <a href="#!/contact">contact</a> portion of this website or to get a quote please fill out this <a href="#!/magic/questionnaire">form</a>.
+        </p>
+        <blockquote>
+          <p><i class='fa fa-comment-o'></i> "You did it again!  You added a tremendous entertainment facet to the evening.
+            Your professional performance at the Rainbow Sales And Marketing event was enjoyed by all.
+            I received many very positive comments from our clients.  Mahalo for astounding our guests in a stellar fashion!" <small>Scott Mukai - Destination Hawaii</small>
+        </blockquote>
+
+        <blockquote>
+          <p><i class='fa fa-comment-o'></i> "We hired Kenton for a first birthday party ...
+            Scheduling with him was very simple, he also arrived early and was very organized and ready to go!
+            The magic show was great, my guests and I were amazed and are still talking about it days later! ...
+            We were very pleased with Kenton and will definitely recommend him for any special event!" <small>Ernest Ikeda Jr</small>
+        </blockquote>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

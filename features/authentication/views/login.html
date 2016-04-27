@@ -1,0 +1,52 @@
+<div id="sign_in1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 header">
+        <h4>Log in to your account</h4>
+
+        <div class="col-md-12 footer">
+          <form class="form-inline" novalidate>
+            <input type="text" class="form-control" placeholder="Username" ng-model='user.username' required autofocus/>
+            <input type="password" class="form-control" placeholder="Password" ng-model='user.password' required/>
+            <input type="submit" value="sign in" ng-click="login()">
+          </form>
+        </div>
+
+        <div class="col-md-12 proof">
+          <div class="col-md-6 remember">
+            <a href="" data-toggle="modal" data-target="#passwordResetModal">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- reset password modal -->
+  <!-- force input to autofocus -->
+  <script>
+    $('#passwordResetModal').on('shown.bs.modal', function () {
+      $(this).find('input:first').focus();
+    });
+  </script>
+  <div class="modal fade" id="passwordResetModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+            class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="reset">Password Reset</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-signin" novalidate="">
+            <input type="text" class="form-control" placeholder="Username" ng-model='resetUser.username' requiredautofocus/>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="resetPassword()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

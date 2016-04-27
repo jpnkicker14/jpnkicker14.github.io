@@ -1,0 +1,171 @@
+<div id="contact" dw-loading="questionnaire" dw-loading-options="loadingOptions">
+  <div class="container">
+    <div class="section_header">
+      <h3>Magic Questionnaire</h3>
+    </div>
+    <div class="row contact">
+      <p>
+        I’d love to get a better understanding of your event. Please fill out the form below with as much information as
+        possible.
+      </p>
+      <div id="wufoo-qlkdbg815gbrpv">
+        Fill out my <a href="https://kentonchun.wufoo.com/forms/qlkdbg815gbrpv">online form</a>.
+      </div>
+      <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+      <script type="text/javascript">var qlkdbg815gbrpv;(function(d, t) {
+        var s = d.createElement(t), options = {
+          'userName':'kentonchun',
+          'formHash':'qlkdbg815gbrpv',
+          'autoResize':true,
+          'height':'1042',
+          'async':true,
+          'host':'wufoo.com',
+          'header':'show',
+          'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+          try { qlkdbg815gbrpv = new WufooForm();qlkdbg815gbrpv.initialize(options);qlkdbg815gbrpv.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+      })(document, 'script');</script>
+
+
+      <!--<form class="form-horizontal" name='questionnaire_form' novalidate>-->
+        <!--<div fieldset>-->
+          <!--<div class="form-group">-->
+            <!--<label for="name" class="col-sm-2 control-label">Name*</label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<input type="text" class="form-control" id="name" placeholder="Name" ng-model="questionnaire.name" required autofocus>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<label for="email" class="col-sm-2 control-label">Email*</label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<input type="email" class="form-control" id="email" placeholder="Email" ng-model="questionnaire.email"-->
+                     <!--required>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<label for="date" class="col-sm-2 control-label">Event Date*</label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<div class="input-group">-->
+                <!--<input id="date" type="text" class="form-control" placeholder="{{placeholderToday}}"-->
+                       <!--datepicker-popup="MM/dd/yyyy" ng-model="questionnaire.eventDate" is-open="openedDate"-->
+                       <!--datepicker-options="dateOptions" ng-required="true" show-button-bar="false" min-date="tomorow" close-text="Close"/>-->
+              <!--<span class="input-group-btn">-->
+                <!--<button type="button" class="btn btn-default" ng-click="openDate($event)"><i-->
+                  <!--class="glyphicon glyphicon-calendar"></i></button>-->
+              <!--</span>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<label  class="col-sm-2 control-label">Event Time*</label>-->
+            <!--<div class="col-sm-10">-->
+              <!--<div class="input-group">-->
+                <!--<div timepicker ng-model="questionnaire.eventTime" show-meridian="'true'"></divtimepicker>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<label for="guest-count" class="col-sm-2 control-label">Guest Count*</label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<input type="number" class="form-control" id="guest-count" placeholder="0"-->
+                     <!--ng-model="questionnaire.guestCount" ui-validate="'$value > 0'" required>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<label for="location" class="col-sm-2 control-label">Location* <i class="fa fa-question-circle"-->
+                                                                              <!--popover-placement="top"-->
+                                                                              <!--popover="Must be indoors"></i></label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<input type="text" class="form-control" id="location" placeholder="Location"-->
+                     <!--ng-model="questionnaire.location" required>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<label for="location" class="col-sm-2 control-label">Type of Magic*</label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<label class="radio-inline">-->
+                <!--<input ng-model='questionnaire.magicType' type="radio" name="magicType" ng-value="'stage&walk-around'"-->
+                       <!--required> Standup/Stage & Walk-Around-->
+              <!--</label>-->
+              <!--<label class="radio-inline">-->
+                <!--<input ng-model='questionnaire.magicType' type="radio" name="magicType" ng-value="'walk-around'"-->
+                       <!--required> Walk-Around Only-->
+              <!--</label>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group" ng-show="questionnaire.magicType === 'stage&walk-around'">-->
+            <!--<label for="location" class="col-sm-2 control-label">Stage Available?</label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<label class="radio-inline">-->
+                <!--<input ng-model='questionnaire.stage' type="radio" name="stage" ng-value="true"> Yes-->
+              <!--</label>-->
+              <!--<label class="radio-inline">-->
+                <!--<input ng-model='questionnaire.stage' type="radio" name="stage" ng-value="false"> No-->
+              <!--</label>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group" ng-show="questionnaire.magicType === 'stage&walk-around'">-->
+            <!--<label for="location" class="col-sm-2 control-label">Microphone Available?</label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<label class="radio-inline">-->
+                <!--<input ng-model='questionnaire.microphone' type="radio" name="microphone" ng-value="true"> Yes-->
+              <!--</label>-->
+              <!--<label class="radio-inline">-->
+                <!--<input ng-model='questionnaire.microphone' type="radio" name="microphone" ng-value="false"> No-->
+              <!--</label>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group" ng-show="questionnaire.magicType === 'stage&walk-around'">-->
+            <!--<label for="microphone-type" class="col-sm-2 control-label">Microphone Type</label>-->
+
+            <!--<div class="col-sm-10">-->
+              <!--<input type="text" class="form-control" id="microphone-type" placeholder="Wired/Wireless/headset/etc"-->
+                     <!--ng-model="questionnaire.microphoneType">-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<label for="event-schedule" class="col-sm-2 control-label">Event Schedule </label>-->
+            <!--<div class="col-sm-10">-->
+              <!--<div class="box">-->
+                <!--<textarea id="event-schedule" placeholder="Tentative Event Schedule/List" class="form-control" ng-model='questionnaire.eventSchedule' rows="5"></textarea>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<label for="notes" class="col-sm-2 control-label">Notes</label>-->
+            <!--<div class="col-sm-10">-->
+              <!--<div class="box">-->
+                <!--<textarea id="notes" placeholder="Additional Notes" class="form-control" ng-model='questionnaire.notes' rows="5"></textarea>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row form">-->
+          <!--<div class="col-sm-6 col-sm-offset-6 row-col">-->
+            <!--<div class="pull-right">-->
+              <!--<div no-captcha g-recaptcha-response="gRecaptchaResponse" control="captchaControl"></div>-->
+            <!--</div>-->
+
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row submit">-->
+          <!--<div class="col-md-8 right">-->
+            <!--<button ng-click='submit()'>Submit</button>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</form>-->
+    </div>
+  </div>
+</div>
+

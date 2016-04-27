@@ -1,0 +1,55 @@
+<div id="blog_post" dw-loading="football">
+  <div class="container">
+    <div class="section_header">
+      <h3>{{footballItem.title}}</h3>
+
+      <!--<input type="text" class="search-query form-control" placeholder="Search">-->
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <img ng-show="img" class="post_pic img-responsive" ng-src="{{mainImage}}"/>
+        <div class="embed-container" ng-show="!img">
+          <iframe ng-src="{{mainVideoUrl}}" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+        <div class="post_content">
+          <!--<h2>subtitle</h2>-->
+          <span class="date">{{footballItem.createdDate | date:'MM/dd/yyyy'}}</span>
+          <div ng-bind-html="footballItem.content"></div>
+
+          <div class="author_box">
+            <div class="author">{{footballItem.author}}</div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <a href="#!/football?page={{fromPage}}" class="btn btn-info"><i class="fa fa-arrow-left"></i> Back</a>
+        </div>
+      </div>
+
+      <!-- SideBar -->
+      <div class="col-sm-4">
+        <div class="sidebar">
+          <div class="box" ng-show="footballItem.images.length > 0">
+            <div class="sidebar_header">
+              <h4>Photos</h4>
+            </div>
+            <ul class="recent_photos">
+              <li ng-repeat="image in footballItem.images">
+                <a href ng-click="setImage(image)"><img ng-src="{{image}}" ></a></li>
+            </ul>
+          </div>
+          <div class="box last" ng-show="footballItem.videos.length > 0">
+            <div class="sidebar_header">
+              <h4>Videos</h4>
+            </div>
+            <ul class="recent_photos">
+              <li ng-repeat="video in footballItem.videos">
+                <a href ng-click="setVideo(video)"><img ng-src="http://img.youtube.com/vi/{{video}}/0.jpg"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

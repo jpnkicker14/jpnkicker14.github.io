@@ -1,0 +1,20 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost:8080/#!/magic/questionnaire</loc>
+    </url>
+    <url>
+        <loc>http://localhost:8080/#!/contact</loc>
+    </url>
+    <url>
+        <loc>http://localhost:8080/#!/resume</loc>
+    </url>
+    <url>
+        <loc>http://localhost:8080/#!/magic</loc>
+    </url>
+    <url>
+        <loc>http://localhost:8080/#!/</loc>
+    </url>
+    <url>
+        <loc>http://localhost:8080/#!/football</loc>
+    </url>
+</urlset>

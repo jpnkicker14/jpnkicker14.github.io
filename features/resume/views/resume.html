@@ -1,0 +1,117 @@
+<div id='resume'  dw-loading="football">
+  <div class='container'>
+    <div class='section_header'>
+      <h3>Kenton S. Chun</h3>
+    </div>
+    <div class='row'>
+      <div class='col-sm-4'>
+        <img src='/resources/images/kentonchun_careerpage.jpg' class='img-responsive img-rounded'/>
+      </div>
+      <div class='col-sm-8 intro'>
+        <h6>Place Kicker, Magician, Web Developer and More</h6>
+
+        <p><i class='fa fa-comment-o'></i>
+          Hello, my name is Kenton Chun and welcome to my resume. Here you can find out more of me in my work life, but as you can see
+          from this site, there's much more to me than just programming.
+          <br/><br/>
+          I hope you find positive things about me here and will strive to to add more soon.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='tabs'>
+  <div class='container'>
+    <tabset>
+      <!--Work Experience -->
+      <tab>
+        <tab-heading>
+          <i class="fa fa-briefcase"></i> Work Experience
+        </tab-heading>
+        <div class='row' ng-repeat='workExperience in workExperiences'>
+          <div class='col-sm-2'><a target='_blank' href='{{workExperience.link}}'><img ng-src='{{workExperience.image}}'
+                                                                                       class='img-rounded img-responsive'/></a>
+          </div>
+          <div class='col-sm-10'>
+            <div class='row'>
+              <div class='col-sm-8'><h5 class='job-title'><a target='_blank' href='{{workExperience.link}}'>{{workExperience.name}}</a>
+                - {{workExperience.position}}</h5></div>
+              <div class='col-sm-4 text-right'>{{workExperience.startDate | date:'MMMM yyyy'}} - <span
+                ng-show='workExperience.endDate'>{{workExperience.endDate | date:'MMMM yyyy'}}</span><span
+                ng-show='!workExperience.endDate'>Present</span></div>
+            </div>
+            <em>{{workExperience.location.city}}, {{workExperience.location.state}}</em>
+            <ul>
+              <li ng-repeat='desc in workExperience.description track by $index'>{{desc}}</li>
+            </ul>
+          </div>
+        </div>
+      </tab>
+      <!--Education-->
+      <tab>
+        <tab-heading>
+          <i class="fa fa-graduation-cap"></i> Education
+        </tab-heading>
+        <div class='row' ng-repeat='education in educations'>
+
+          <div class='col-sm-2'><a target='_blank' href='{{education.link}}'><img ng-src='{{education.image}}'
+                                                                                  class='img-rounded img-responsive'/></a>
+          </div>
+          <div class='col-sm-10'>
+            <h5 class='title'><a target='_blank' href='{{education.link}}'>{{education.name}}</a></h5>
+            <h6 ng-show='education.degree'>{{education.degree}} - {{education.graduationDate | date:'MMMM yyyy'}}</h6>
+            <em>{{education.location.city}}, {{education.location.state}}</em>
+            <ul ng-show='education.description.length > 0'>
+              <li ng-repeat='desc in education.description track by $index'>{{desc}}</li>
+            </ul>
+          </div>
+
+        </div>
+      </tab>
+      <!--Skills -->
+      <tab>
+        <tab-heading>
+          <i class="fa fa-wrench"></i> Skills
+        </tab-heading>
+        <div ng-repeat='(category, skills) in rawSkills | groupBy: "category" '>
+          <h2>{{category}}</h2>
+
+          <div ng-repeat='skill in skills | orderBy: ["-value", "+name"] '>
+            <div class='col-sm-4 text-center'>
+              <h3>{{skill.name}}</h3>
+              <p>
+                <div rating ng-model='skill.value' max='5' readonly='true'></div>
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </tab>
+      <!--Extracurricular -->
+      <tab>
+        <tab-heading>
+          <i class="fa fa-gears"></i> Extracurriculars
+        </tab-heading>
+        <div class="row" ng-repeat='ec in extracurriculars | orderBy: "startDate": true'>
+          <div class='col-sm-2'><a target='_blank' href='{{ec.link}}'><img ng-src='{{ec.image}}'
+                                                                           class='img-rounded img-responsive'/></a>
+          </div>
+          <div class='col-sm-10'>
+            <div class='row'>
+              <div class='col-sm-8'><h5 class='job-title'><a target='_blank' href='{{ec.link}}'>{{ec.name}}</a> -
+                {{ec.position}}</h5></div>
+              <div class='col-sm-4 text-right'>{{ec.startDate | date:'MMMM yyyy'}} - <span ng-show='ec.endDate'>{{ec.endDate | date:'MMMM yyyy'}}</span><span
+                ng-show='!ec.endDate'>Present</span></div>
+            </div>
+            <em>{{ec.location.city}}, {{ec.location.state}}</em>
+            <ul>
+              <li ng-repeat='desc in ec.description track by $index'>{{desc}}</li>
+            </ul>
+          </div>
+        </div>
+      </tab>
+    </tabset>
+  </div>
+</div>
+

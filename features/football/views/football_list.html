@@ -1,0 +1,56 @@
+<div id='football-list' dw-loading="football">
+  <div class='container'>
+    <div class='section_header football-header'>
+      <h3>Football</h3>
+    </div>
+    <div class='football-intro'>
+      <p>Welcome to the football section of KentonChun.com. Here you can relive my football career with me again and
+        maybe even see some new updates.
+      </p>
+
+      <p>I'd like to mention that there are many people who have helped me in my football career, like my family and
+        friends who always supported and encouraged me to dream big.
+        I'd like to specifically recognize my kicking coach, Peter Kim for everything he's done for me over the many
+        years.
+        And I'd also like to thank Coach Greg McMackin and Coach Dick Tomey, for giving me the opportunity that few would
+        and letting me live my dream
+        by playing for the only Division 1 football team in my home town.</p><br>
+
+      <div kc-table data="stats"></div>
+    </div>
+
+    <!-- Post Row -->
+
+    <div class='row post_row' style="padding-bottom: 10px;" ng-repeat='row in footballRows'>
+      <div ng-repeat='football in row' football='football'>
+        <div class='col-sm-4'>
+          <div class='post'>
+            <div class='img'>
+              <a ng-href='#!/football/{{football.id}}?fromPage={{currentPage}}'>
+                <img ng-show='football.images.length > 0' ng-src='{{football.images[0]}}' alt='' class='img-responsive'/>
+                <img ng-hide='football.images.length > 0' ng-src='http://img.youtube.com/vi/{{football.videos[0]}}/0.jpg' alt='' class='img-responsive'/>
+              </a>
+            </div>
+            <div class='text'>
+              <h5><a ng-href='#!/football/{{football.id}}?fromPage={{currentPage}}'>{{football.title}}</a></h5>
+              <span class='date'>{{football.createdDate | date:'MM/dd/yyyy'}}</span>
+
+              <p>{{football.intro}}...</p>
+            </div>
+            <div class='author_box'>
+              <h6>{{football.author}}</h6>
+            </div>
+            <a class='plus_wrapper' href='#!/football/{{football.id}}?fromPage={{currentPage}}'>
+              <span>&#43;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    <div class='paginator-container'>
+      <div pagination ng-model="currentPage" total-items="totalFootball" items-per-page="pageSize" ng-change="pageChange()"></div>
+    </div>
+  </div>
+</div>
