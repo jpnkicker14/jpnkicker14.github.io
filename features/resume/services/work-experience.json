@@ -1,4 +1,26 @@
 [
+  {
+
+    "createdAt": "2020-07-13T09:17:56.417Z",
+    "description": [
+        "Plan and develop features for the frontend of a property visualization network solution using the MEAN Stack (MongoDB, Express.js, Angular.js, Node.js)",
+        "Coordinate and update from Angularjs to Angular via web components",
+        "Coordinate with remote teams around the world"
+    ],
+    "endDate": "",
+    "image": "/resources/images/logos/liveaction.png",
+    "link": "https://www.liveaction.com/",
+    "location": {
+        "city": "Honolulu",
+        "state": "Hawaii"
+    },
+    "name": "LiveAction",
+    "objectId": "C9gBSLtcB8",
+    "order": 8,
+    "position": "Software Engineer I",
+    "startDate": "2017-12-01",
+    "updatedAt": "2020-07-13T20:59:53.947Z"
+  },
 	{
         "createdAt": "2015-08-13T09:17:56.409Z",
         "description": [
@@ -92,7 +114,7 @@
             "Developed sites for various clients in different languages including Ruby on Rails, MEAN Stack (MongoDB, Express.js, Angular.js, Node.js), and .Net",
             "Worked and lead teams of various sizes both locally and remotely"
         ],
-        "endDate": "",
+        "endDate": "2017-12-01",
         "image": "/resources/images/logos/datahouse-logo.jpg",
         "link": "http://www.datahouse.com/",
         "location": {
